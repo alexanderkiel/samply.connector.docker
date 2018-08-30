@@ -15,7 +15,7 @@ A Samply.Store Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Samply.
 ## Usage
 
 ```sh
-docker run -p 8080:8080 -e POSTGRES_HOST=<host> -e POSTGRES_PASS=<password> samply/samply.store:4.2.2
+docker run -p 8080:8080 -e POSTGRES_HOST=<host> -e POSTGRES_PASS=<password> akiel/samply.connector:latest
 ```
 
 Open the following URL in a Browser:
