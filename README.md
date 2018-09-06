@@ -1,4 +1,4 @@
-# Docker Samply.Store Tomcat
+# Docker Samply.Connector
 
 A Samply.Store Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Samply.Store is configured alike that one from the windows installer. The Postgres database has to be supplied in another Docker container. The connection settings are given by environment variables which are documented below.
 
