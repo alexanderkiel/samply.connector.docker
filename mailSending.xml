@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mailSending xmlns="http://schema.samply.de/config/MailSending" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schema.samply.de/config/MailSending mailSending.xsd ">
+  <host/>
+  <port/>
+  <protocol>smtp</protocol>
+  <fromAddress/>
+  <user/>
+  <password/>
+  <templateFolder>/WEB-INF/classes/mailTemplates/</templateFolder>
+</mailSending>

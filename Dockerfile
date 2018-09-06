@@ -15,9 +15,12 @@ FROM tomcat:8.5.32-jre8-alpine
 COPY --from=build /target /usr/local/tomcat/webapps/gba-connector
 
 ADD context.xml /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
-#ADD mdrconfig.xml /usr/local/share/samply/
 ADD server.xml /usr/local/tomcat/conf
-#ADD proxy.xml /samply/conf/
+
+ADD samply_common_urls.xml /root/.config/samply/
+ADD samply_common_operator.xml /root/.config/samply/
+ADD samply_common_config.xml /root/.config/samply/
+ADD samply_bridgehead_info.xml /root/.config/samply/
 
 # JMX Exporter
 ENV JMX_EXPORTER_VERSION 0.3.1

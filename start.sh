@@ -7,6 +7,11 @@ sed -i "s/{postgres-port}/${POSTGRES_PORT:-5432}/" /usr/local/tomcat/conf/Catali
 sed -i "s/{postgres-db}/${POSTGRES_DB:-samplyconnector}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
 sed -i "s/{postgres-user}/${POSTGRES_USER:-samplyconnector}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
 sed -i "s/{postgres-pass}/${POSTGRES_PASS}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
+sed -i "s#{store-url}#${STORE_URL}#" /root/.config/samply/samply_common_urls.xml
+sed -i "s/{operator-first-name}/${OPERATOR_FIRST_NAME:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
+sed -i "s/{operator-last-name}/${OPERATOR_LAST_NAME:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
+sed -i "s/{operator-email}/${OPERATOR_EMAIL:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
+sed -i "s#{operator-phone}#${OPERATOR_PHONE:-UNKNOWN}#" /root/.config/samply/samply_common_operator.xml
 
 if [ -n "${PROXY_URL}" ]; then
     echo "Setting up proxy ${PROXY_URL} ..."
