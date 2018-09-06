@@ -1,3 +1,6 @@
+[![Docker Pulls](https://img.shields.io/docker/pulls/akiel/samply.connector.svg)](https://hub.docker.com/r/akiel/samply.connector/)
+[![Image Layers](https://images.microbadger.com/badges/image/akiel/samply.connector.svg)](https://microbadger.com/images/akiel/samply.connector)
+
 # Docker Samply.Connector
 
 A Samply.Store Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Samply.Store is configured alike that one from the windows installer. The Postgres database has to be supplied in another Docker container. The connection settings are given by environment variables which are documented below.
