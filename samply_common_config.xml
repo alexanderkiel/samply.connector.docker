@@ -3,14 +3,14 @@
                xsi:schemaLocation="http://schema.samply.de/common http://schema.samply.de/config/Common.Config.xsd ">
     <Proxy>
         <HTTP>
-            <Url />
-            <Username />
-            <Password />
+            <Url>{proxy-url}</Url>
+            <Username>{proxy-user}</Username>
+            <Password>{proxy-pass}</Password>
         </HTTP>
         <HTTPS>
-            <Url />
-            <Username/>
-            <Password />
+            <Url>{proxy-url}</Url>
+            <Username>{proxy-user}</Username>
+            <Password>{proxy-pass}</Password>
         </HTTPS>
         <Realm/>
         <NoProxyHosts>
