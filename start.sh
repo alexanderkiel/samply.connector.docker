@@ -7,7 +7,7 @@ sed -i "s/{postgres-port}/${POSTGRES_PORT:-5432}/" /usr/local/tomcat/conf/Catali
 sed -i "s/{postgres-db}/${POSTGRES_DB:-samplyconnector}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
 sed -i "s/{postgres-user}/${POSTGRES_USER:-samplyconnector}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
 sed -i "s/{postgres-pass}/${POSTGRES_PASS}/" /usr/local/tomcat/conf/Catalina/localhost/gba-connector.xml
-sed -i "s~{proxy-url}~${PROXY_URL:-}~" /root/.config/samply/samply_common_config.xml
+sed -i "s~{proxy-url}~${HTTP_PROXY:-}~" /root/.config/samply/samply_common_config.xml
 sed -i "s/{proxy-user}/${PROXY_USER:-}/" /root/.config/samply/samply_common_config.xml
 sed -i "s/{proxy-pass}/${PROXY_PASS:-}/" /root/.config/samply/samply_common_config.xml
 sed -i "s#{store-url}#${STORE_URL}#" /root/.config/samply/samply_common_urls.xml

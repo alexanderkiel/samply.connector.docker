@@ -19,9 +19,13 @@ A Samply.Store Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Samply.
 * OPERATOR_LAST_NAME - the IT staff which runs the connector
 * OPERATOR_EMAIL - the IT staff which runs the connector
 * OPERATOR_PHONE - the IT staff which runs the connector
-* PROXY_URL - the URL of the HTTP proxy to use for outgoing connections; enables proxy usage if set
+* HTTP_PROXY - the URL of the HTTP proxy to use for outgoing connections; enables proxy usage if set
 * PROXY_USER - the user of the proxy account (optional)
 * PROXY_PASS - the password of the proxy account (optional)
+
+### Proxy
+
+You can configure your proxy in `~/.docker/config.json` as described [here][4].
 
 ## Usage
 
@@ -50,3 +54,4 @@ The metrics should be polled by a [Prometheus][2] instance.
 [1]: <https://hub.docker.com/_/tomcat/>
 [2]: <https://prometheus.io>
 [3]: <https://github.com/prometheus/jmx_exporter>
+[4]: <https://docs.docker.com/network/proxy/>
