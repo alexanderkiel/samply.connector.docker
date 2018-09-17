@@ -1,6 +1,6 @@
 FROM debian:latest AS build
 
-ENV CONNECTOR_VERSION 3.0.4
+ENV CONNECTOR_VERSION 3.0.5
 
 RUN apt-get update && apt-get install -yq wget unzip
 
