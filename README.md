@@ -13,6 +13,7 @@ A Samply.Connector Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Sam
 * POSTGRES_USER - the database username, defaults to `samplyconnector`
 * POSTGRES_PASS - the database password
 * STORE_URL - the URL of the store to connect to
+* MDR_URL - the URL of the mdr to connect to
 * CATALINA_OPTS - JVM options for Tomcat like `-Xmx8g`
 * ENABLE_METRICS - `true` to enable metrics (see below), defaults to `false`
 * OPERATOR_FIRST_NAME - the IT staff which runs the connector
