@@ -11,6 +11,7 @@ sed -i "s~{proxy-url}~${HTTP_PROXY:-}~" /root/.config/samply/samply_common_confi
 sed -i "s/{proxy-user}/${PROXY_USER:-}/" /root/.config/samply/samply_common_config.xml
 sed -i "s/{proxy-pass}/${PROXY_PASS:-}/" /root/.config/samply/samply_common_config.xml
 sed -i "s#{store-url}#${STORE_URL}#" /root/.config/samply/samply_common_urls.xml
+sed -i "s#{mdr-url}#${MDR_URL:-https://mdr.germanbiobanknode.de/v3/api/mdr}#" /root/.config/samply/samply_common_urls.xml
 sed -i "s/{operator-first-name}/${OPERATOR_FIRST_NAME:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
 sed -i "s/{operator-last-name}/${OPERATOR_LAST_NAME:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
 sed -i "s/{operator-email}/${OPERATOR_EMAIL:-UNKNOWN}/" /root/.config/samply/samply_common_operator.xml
