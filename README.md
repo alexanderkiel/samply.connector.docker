@@ -37,10 +37,12 @@ docker run -p 8080:8080 -e POSTGRES_HOST=<host> -e POSTGRES_PASS=<password> akie
 Open the following URL in a Browser:
 
 ```
-http://localhost:8080/gba-connector
+http://localhost:8080/gba-connector/login.xhtml
 ```
 
-You should see a welcome page.
+You should see the login page. The default username and password is `admin` and `adminpass`.
+
+You can register your Connector with the Search Broker under the following address: `https://search.germanbiobanknode.de/broker`.
 
 ## Metrics
 
