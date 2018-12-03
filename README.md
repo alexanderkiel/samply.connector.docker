@@ -23,6 +23,11 @@ A Samply.Connector Docker image based on [tomcat:8.5.32-jre8-alpine][1]. The Sam
 * HTTP_PROXY - the URL of the HTTP proxy to use for outgoing connections; enables proxy usage if set
 * PROXY_USER - the user of the proxy account (optional)
 * PROXY_PASS - the password of the proxy account (optional)
+* MAIL_HOST - mail host which is able to send mails, defaults to ``
+* MAIL_PORT - port to mail host, defaults to ``
+* MAIL_PROTOCOL - protocol for mail, defaults to ``
+* MAIL_FROM_ADDRESS - mail address from which mails are sent, defaults to ``
+* MAIL_FROM_NAME - subject of mails, defaults to ``
 
 ### Proxy
 

@@ -2,8 +2,8 @@
 <bridgehead xmlns="http://schema.samply.de/config/DKTKBridgeheadInfo"
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="http://schema.samply.de/config/DKTKBridgeheadInfo http://schema.samply.de/config/DKTKBridgeheadInfo.xsd">
-    <name>LIFE Brückenkopf</name>
-    <longname>LIFE Brückenkopf</longname>
+    <name>Brückenkopf</name>
+    <longname>Brückenkopf</longname>
     <dktkid/>
     <monitor></monitor>
     <centralsearch></centralsearch>

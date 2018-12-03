@@ -21,6 +21,7 @@ ADD samply_common_urls.xml /root/.config/samply/
 ADD samply_common_operator.xml /root/.config/samply/
 ADD samply_common_config.xml /root/.config/samply/
 ADD samply_bridgehead_info.xml /root/.config/samply/
+ADD mailSending.xml /root/.config/samply/
 
 # JMX Exporter
 ENV JMX_EXPORTER_VERSION 0.3.1
